@@ -1,0 +1,96 @@
+/*seletor global - indica os elementos da html*/
+*{
+font-family: 'Gill Sans', sans-serif;
+margin: 0; /*ponto externo*/
+padding: 0; /*ponto interno*/
+box-sizing: border-box; /*inclui espaco interno e externo e bordas do tamanho do elemento*/
+}
+
+h1{
+position: absolute;
+opacity: 0;
+z-index: -1;
+}
+
+#cabecalho{
+background-color: lavender;
+
+}
+
+#cabecalho > img{
+width: 80px;
+height: 80px;
+
+}
+#cabecalho >nav{
+    display: flex;
+    gap: 15px;
+    /*justify-content: space-between;
+    align-items: center; */
+}
+
+#cabecalho > nav > a{
+color: mediumslateblue;
+text-decoration: none;
+font-size: 16 px;
+}
+
+/* secao produtos */
+#container-flex-produtos{
+/* background-color: rgb(225, 225, 235); */
+display: flex; /*ativa o flexbox*/
+align-items: center;
+justify-content: space-between;
+column-gap: 10px;
+flex-wrap: wrap;
+row-gap: 10px;
+}
+
+.card-produto{
+
+    background-color:grey;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding:10px;
+    border: 2px solid #000; /* borda*/
+    border-radius: 10px; /*arredondar borda*/
+}
+
+.card-produto > img{
+width: 100%;
+height: 180px;
+object-fit: cover;
+object-position:center;
+}
+
+#container-flex-suporte{
+/* background-color: aqua; */
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+padding: 25px 0;
+}
+
+form{
+background-color: rgb(180, 170, 201);
+width:50%;
+height: 1000px;
+border-radius: 10px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+
+}
+
+.form-campo-input{
+height: 35px;
+border: 2px solid #000;
+border-radius: 10px;
+padding: 10px;
+}
+
+    ~

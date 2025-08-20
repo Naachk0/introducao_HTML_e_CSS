@@ -9,26 +9,26 @@
     <meta name="description" content="Site com proposito em explicar o html ao todo">
 
     <title>introdução ao HTML</title>
-    <link rel="shortcut icon" href=".will.funkopop.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="../arquivos/will.funkopop.webp" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css"> <!--linka o css de forma externa-->
+    <link rel="stylesheet" href="../estilizacoes/style.css"> <!--linka o css de forma externa-->
     <style>
 
     </style> <!--linkando de forma interna-->
 </head>
 
 <body>
-<!--linkando de forma inline ou direto na tag-->
+    <!--linkando de forma inline ou direto na tag-->
     <h1>Tela principal sobre o detetive Will Graham</h1> <!-- h1 titulo principal, chamamos apenas 1 vez-->
     <header id="cabecalho">
 
-        <img id="logo" src="./will.funkopop.webp" alt=" imagem legal will graham">
+        <img id="logo" src="../arquivos/will.funkopop.webp" alt=" imagem legal will graham">
 
         <nav>
             <a href="https://youtu.be/BYFz-lJEfvM?si=D0_m9_JFe1jp5Aur">lore hannibal legal</a>
             <a href="index.html">inicial</a>
-            <a href="teste.pdf" download> saiba mais</a>
-            
+            <a href="../arquivos/teste.pdf" download> saiba mais</a>
+
 
 
         </nav>
@@ -38,36 +38,60 @@
     <main>
         <!--seçao modelos-->
         <section>
-            
-            <h2> modelos funko hannibal</h2>
-            <div > <!--fins de estilizaçao-->
 
-                <!--card produto-->
-                <img src="./funko pop  will graham 2.webp" 
-                alt="funko will graham normal" >
-                <h3>funko will graham casual</h3>
-                <span>340,00</span>
+            <h2> modelos funko Will Graham</h2>
+            <div id="container-flex-produtos">
+
+                <article class="card-produto"> <!--fins de estilizaçao-->
+
+                    <!--card produto-->
+                    <img src="../arquivos/funko pop  will graham 2.webp" alt="funko will graham normal">
+                    <h3>funko will graham casual</h3>
+                    <span>340,00</span>
+
+                </article>
                 
+                <article class="card-produto"> <!--fins de estilizaçao-->
+
+                    <!--card produto-->
+                    <img src="../arquivos/funko pop  will graham 2.webp" alt="funko will graham normal">
+                    <h3>funko will graham casual</h3>
+                    <span>340,00</span>
+
+                </article>
+                <article class="card-produto"> <!--fins de estilizaçao-->
+
+                    <!--card produto-->
+                    <img src="../arquivos/funko pop  will graham 2.webp" alt="funko will graham normal">
+                    <h3>funko will graham casual</h3>
+                    <span>340,00</span>
+
+                </article>
 
             </div>
+
         </section>
-        <h2>suporte</h2>
+    
+        
+        <section id="container-flex-suporte">
+<h2>suporte</h2>
+
         <form> <!--formulario-->
             <label for="campo-nomecompleto">nome completo: </label>
-            <input type="text" placeholder="digite seu nome completo" id="campo-nomecompleto">
-            <br /> <!--quebra a linha-->
-
+            <input class="form-campo-input" placeholder="digite seu nome completo" id="campo-nomecompleto">
+            <!-- <br /> quebra a linha -->
+ 
             <label for="campo-email">email: </label>
-            <input type="email" placeholder="digite seu email" id="campo-email">
+            <input class="form-campo-input" placeholder="digite seu email" id="campo-email">
             <br />
             <label for="">senha: </label>
-            <input type="password" name="" id="">
+            <input class="form-campo-input"  type="password" name="" id="">
 
-            <br />
+            <!-- <br /> -->
             <label for="">upload: </label>
-            <input type="file" name="" id="">
+            <input class="form-campo-input" type="file" name="" id="">
 
-            <br />
+            <!-- <br /> -->
             <label for="escolha estado">estado: </label>
             <select name="" id="escolha estado"> <!--atributos value-->
                 <option value="" selected disabled>Selecione uma opcao</option>
@@ -80,29 +104,27 @@
                 <option value="SG">SG</option>
                 <option value="CE">CE</option>
             </select>
-            <br />
+            <!-- <br /> -->
 
-            <input type="checkbox" name="" id="">
+            <input class="form-campo-input" id="">
             <label for="">li e concordo com os termos</label>
-            <br />
+            <!-- <br /> -->
             <label for="">Sexo: </label>
 
             <label for="">feminino</label>
-            <input type="radio" name="opcao-sexo" id="" value="feminino">
+            <input "opcao-sexo" type="radio" value="feminino">
 
             <label for="">masculino</label>
-            <input type="radio" name="opcao-sexo" id="" value="masculino">
+            <input "opcao-sexo" type="radio" id="" value="masculino">
 
-            <br />
+            <!-- <br /> -->
             <label for="">Descrição</label>
             <textarea name="" id="" required></textarea>
-            <br />
+            <!-- <br /> -->
             <button type="submit">enviar</button>
             <button type="reset">limpar</button>
 
         </form> <!--formulario-->
-        <section>
-
         </section>
 
 
